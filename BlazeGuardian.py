@@ -31,7 +31,8 @@ st.write("""
 The input variables provided to the prediction function represent key characteristics of a fire incident, including its geographical location (latitude and longitude), potential causes such as recreation or lightning strikes, fire spread rate, fuel types involved, and activity classes related to the fire. The XGBoost model leverages these features to predict a severity index value, indicating the anticipated severity or extent of the fire incident. This index value serves as a quantitative or qualitative measure of the fire's severity, aiding in decision-making and resource allocation for firefighting and emergency response efforts.
 """)
 
-df1 = pd.read_csv("Wildfire_Preprocessed_Data.csv")
+url = "https://github.com/surajs45/BlazeGuardian/blob/main/Wildfire_Preprocessed_Actual.csv"
+df1 = pd.read_csv(url, index_col=0)
 
 st.dataframe(df1)
 
