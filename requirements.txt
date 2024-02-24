@@ -6,3 +6,5 @@ matplotlib.pyplot
 seaborn
 xgboost
 numpy
+mpl_toolkits.basemap
+tensorflow
