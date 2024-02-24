@@ -70,7 +70,7 @@ if st.button('Predict Fire Size'):
                                    fuel_type_C2, fuel_type_O1a, activity_class_Cooking, general_cause_desc_Lightning)
 
     # Display the prediction
-    st.write(f'Predicted Fire Size: {prediction}')
+    st.subheader(f'Predicted Fire Size: {prediction}')
 
     longitudes = range(0, 120)
     latitudes = range(0, 120)
