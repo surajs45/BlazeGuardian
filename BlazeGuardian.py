@@ -38,11 +38,6 @@ df1 = pd.read_csv("Wildfire_Preprocessed_Data.csv")
 
 st.dataframe(df1)
 
-import xgboost as xgb
-import numpy as np
-import pickle
-import matplotlib.pyplot as plt
-
 loaded_model = xgb.XGBClassifier()
 loaded_model.load_model("model_with_coordinates.json")
 
