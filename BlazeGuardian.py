@@ -116,7 +116,7 @@ This machine learning model not only displays how much each factor contributes t
 """)
 
 df1 = pd.read_csv("https://raw.githubusercontent.com/surajs45/BlazeGuardian/main/Wildfire_Preprocessed_Data.csv")
-y_fields = pd.read_csv("Wildfire_Preprocessed_Actual.csv")
+y_fields = pd.read_csv("https://raw.githubusercontent.com/surajs45/BlazeGuardian/main/Wildfire_Preprocessed_Actual.csv")
 
 st.dataframe(df1)
 
