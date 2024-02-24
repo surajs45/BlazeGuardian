@@ -25,7 +25,15 @@ st.write("Use the button below to acces a in-depth analysis of our findings.")
 st.link_button("Access Report", "https://docs.google.com/document/d/1aVI4KXZcpCF6pXc67k_snbY7S8DZU7NgnNO7wXgfvqA/edit?usp=sharing")
 
 st.sidebar.title("_Explore the dataset!_")
-
+# Input fields for prediction
+latitude = st.sidebar.number_input('Latitude')
+longitude = st.sidebar.number_input('Longitude')
+general_cause_desc_Recreation = st.sidebar.selectbox('General Cause Recreation', [0, 1])
+fire_spread_rate = st.sidebar.number_input('Fire Spread Rate')
+fuel_type_C2 = st.sidebar.selectbox('Fuel Type C2', [0, 1])
+fuel_type_O1a = st.sidebar.selectbox('Fuel Type O1a', [0, 1])
+activity_class_Cooking = st.sidebar.selectbox('Activity Class Cooking and Warming', [0, 1])
+general_cause_desc_Lightning = st.sidebar.selectbox('General Cause Lightning', [0, 1])
 
 st.write("""
 The input variables provided to the prediction function represent key characteristics of a fire incident, including its geographical location (latitude and longitude), potential causes such as recreation or lightning strikes, fire spread rate, fuel types involved, and activity classes related to the fire. The XGBoost model leverages these features to predict a severity index value, indicating the anticipated severity or extent of the fire incident. This index value serves as a quantitative or qualitative measure of the fire's severity, aiding in decision-making and resource allocation for firefighting and emergency response efforts.
@@ -72,16 +80,6 @@ def predict_fire_size(latitude, longitude, general_cause_desc_Recreation, fire_s
 
 # Streamlit UI
 st.title('Fire Size Prediction')
-
-# Input fields for prediction
-latitude = st.number_input('Latitude')
-longitude = st.number_input('Longitude')
-general_cause_desc_Recreation = st.selectbox('General Cause Recreation', [0, 1])
-fire_spread_rate = st.number_input('Fire Spread Rate')
-fuel_type_C2 = st.selectbox('Fuel Type C2', [0, 1])
-fuel_type_O1a = st.selectbox('Fuel Type O1a', [0, 1])
-activity_class_Cooking = st.selectbox('Activity Class Cooking and Warming', [0, 1])
-general_cause_desc_Lightning = st.selectbox('General Cause Lightning', [0, 1])
 
 # Button to trigger prediction
 if st.button('Predict Fire Size'):
