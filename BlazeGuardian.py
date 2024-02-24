@@ -115,7 +115,7 @@ st.write("""
 This machine learning model not only displays how much each factor contributes to a wildfire, but also allows you to explore the data further by segmenting it into various causes and possible factors to help mitigate the risk of wildfires, particularly in First Nations communities. Please view to the dataset below for your reference.
 """)
 
-df1 = pd.read_csv("Wildfire_Preprocessed_Data.csv")
+df1 = pd.read_csv("https://raw.githubusercontent.com/surajs45/BlazeGuardian/main/Wildfire_Preprocessed_Data.csv")
 y_fields = pd.read_csv("Wildfire_Preprocessed_Actual.csv")
 
 st.dataframe(df1)
