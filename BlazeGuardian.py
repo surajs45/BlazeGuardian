@@ -27,10 +27,7 @@ st.link_button("Access Report", "https://docs.google.com/document/d/1frUK1DXamQg
 st.sidebar.title("_Explore the dataset!_")
 
 
-st.title("_BlazeGuardian_")
-
 st.write("""
-## Explore the factors that contribute to the wildfires in Alberta and Beyond
 The input variables provided to the prediction function represent key characteristics of a fire incident, including its geographical location (latitude and longitude), potential causes such as recreation or lightning strikes, fire spread rate, fuel types involved, and activity classes related to the fire. The XGBoost model leverages these features to predict a severity index value, indicating the anticipated severity or extent of the fire incident. This index value serves as a quantitative or qualitative measure of the fire's severity, aiding in decision-making and resource allocation for firefighting and emergency response efforts.
 """)
 
