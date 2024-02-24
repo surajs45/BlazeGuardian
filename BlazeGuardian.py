@@ -22,7 +22,7 @@ st.download_button("Alberta Wildfires Data Set", "/content/fp-historical-wildfir
 
 st.subheader("Access to Detailed Report")
 st.write("Use the button below to acces a in-depth analysis of our findings.")
-st.link_button("Access Report", "https://docs.google.com/document/d/1frUK1DXamQg05Hj76eCshZuxbO8vuOiJT_kCOUjOk_4/edit?usp=sharing")
+st.link_button("Access Report", "https://docs.google.com/document/d/1aVI4KXZcpCF6pXc67k_snbY7S8DZU7NgnNO7wXgfvqA/edit?usp=sharing")
 
 st.sidebar.title("_Explore the dataset!_")
 
