@@ -37,7 +37,7 @@ df1 = pd.read_csv(url, index_col=0)
 st.dataframe(df1)
 
 loaded_model = xgb.XGBClassifier()
-loaded_model.load_model("model_with_coordinates.json")
+loaded_model.load_model("https://raw.githubusercontent.com/surajs45/BlazeGuardian/main/model_with_coordinates.json")
 
 required_columns = ['fire_location_latitude', 'fire_location_longitude', 'general_cause_desc_Recreation',
                     'fire_spread_rate', 'fuel_type_C2', 'fuel_type_O1a', 'activity_class_Cooking and Warming',
